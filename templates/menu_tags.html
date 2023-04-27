@@ -1,0 +1,7 @@
+{% load menu_tags %}
+
+<ul>
+  {% draw_menu 'main_menu' %}
+    <li><a href="{{ item.link }}">{{ item.text }}</a></li>
+  {% endblock %}
+</ul>
